@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+
+	
+	
+	#map{
+		margin-top : 3%;
+		width:100%;
+		height:840px;
+	}
+	
+	
+	.total_div{
+		width: 100%;
+		height: 840px;
+		margin-top: 5%;
+	}
+	
+	
+	#main1{
+	float : left;
+	width: 50%;
+	height : 840px;
+	background-color: #E6E6E6;
+	
+	
+	}
+	
+	#main1-1{
+	
+	height : 5%;
+	}
+	
+	#main1-2{
+	height : 95%;
+	overflow-y: scroll;
+	}
+	
+	
+	
+	.map_wrap{
+		float :left;
+		width: 50%;
+		height: 100%;
+		position : relative;
+		bottom: 30px;
+	}
+	
+/* dd */
+#ite span{
+	display: none;
+	
+}
+#ite div{
+	display: none;
+}
+
+
+
+.listbox2{
+    border:2px soli; 
+    margin: 10px;
+    box-shadow: 1px 1px 6px ;
+    background-color: white;   
+    display: flex;
+    flex-flow: wrap;
+}
+
+#imgbox{
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+}
+
+
+@media screen and (max-height: 800px) {
+
+.total_div{
+		width: 100%;
+		height : 725px;
+		margin-top: 3.8%;
+	}
+	
+#map{
+		margin-top : 3%;
+		width:100%;
+		height:725px;
+	}	
+	
+	
+#main1{
+	float : left;
+	width: 50%;
+	height : 725px;
+	background-color: #E6E6E6;
+	
+	
+	}	
+
+@media screen and (max-width: 426px) {
+
+
+	
+	#map{
+		margin-top : 20%;
+		width:100%;
+		height:400px;
+	}
+	
+	#menu_wrap{
+		
+		margin-top : 5%;
+	}
+	
+	#placesList{
+		overflow : scroll;
+		height : 150px;
+	}
+	
+	.scroller{
+		overflow: scroll; 
+		
+	}
+	.itemList{
+		margin-top: 7%;
+		width : 100%;
+
+	}
+	
+	#pagination{
+		margin-left : 45%;
+	}
+	
+
+}

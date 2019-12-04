@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd">
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/spring/root-context.xml</param-value>
+  </context-param>
+       <filter>
+      <filter-name>encodingFilter</filter-name>
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+      <init-param>
+         <param-name>encoding</param-name>
+         <param-value>UTF-8</param-value>
+      </init-param>
+   </filter>
+   <filter-mapping>
+      <filter-name>encodingFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+   </filter-mapping>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>appServlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+    
+    
+    <!-- 파일 업로드 -->
+    <multipart-config>
+		<location>C:\\upload\\temp</location> <!-- 저장경로 -->
+		<max-file-size>20971520</max-file-size> <!-- 1MB * 20(최대크기) -->
+		<max-request-size>41943040</max-request-size> <!-- 40MB(한번에 올릴 수 있는 최대 크기) -->
+		<file-size-threshold>20191520</file-size-threshold> <!-- 20MB(특정 사이즈의 메모리 사용) -->
+	</multipart-config>
+    <!-- 파일 업로드 -->
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>appServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+</web-app>

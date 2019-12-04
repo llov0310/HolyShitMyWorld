@@ -1,0 +1,120 @@
+#content {
+	border: 1px solid gray;
+	float: left;
+    width: 70%;
+    margin-top: 110px;
+    padding-bottom: 50px;
+}
+.wrap {
+    width: 1700px;
+    min-width: 1500px;
+    margin: 0 auto;
+}
+
+.section_home .column {
+    float: left;
+    width: 50%;
+}
+.sh_group {
+    min-height: 185px;
+}
+.sh_group, .sh_group2, .sh_group3, .sh_group4 {
+    margin: 16px 8px 0;
+    padding: 32px 29px 32px;
+    text-align: left;
+    border: 1px solid #dadada;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+   
+}
+/*안에 스타일  */
+.sh_header {
+    position: relative;
+}
+.sh_group .sh_content {
+    min-height: 119px;
+    padding-top: 9px;
+}
+.sh_lst {
+    position: relative;
+    min-height: 80px;
+    margin-top: -1px;
+    padding-bottom: 8px;
+}
+.blind, legend {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.sh_lst .pic_desc {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 80px;
+}
+.blind, legend {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.sh_lst .intro_desc {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    padding: 15px 0 0 40%;
+    color: #666;
+}
+.sh_lst .nic_tit {
+    margin: 12px 8px 0 40%;
+}
+.sh_lst .nic_desc {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 8px;
+    letter-spacing: -1px;
+    color: #666;
+}
+#content {
+    position: relative;
+    padding: 32px 51px 95px;
+}
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.sh_lst dt {
+    font-size: 12px;
+    font-weight: 700;
+    float: left;
+    color: #333;
+    margin: 5px 5px 5px 200px; 
+}
+.desc_sub {
+    font-size: 18px;
+    line-height: 14px;
+    clear: left;
+    padding-top: 15px;
+    letter-spacing: -1px;
+    color: #899197;
+}
+.desc_sub .more {
+    font-weight: 700;
+    margin-left: 7px;
+    padding-right: 5px;
+    text-decoration: underline;
+    color: #390;
+    background: url(https://static.nid.naver.com/images/web/user/bu_rarr_green2.gif) no-repeat 100% 3px;
+    background-image: url(https://static.nid.naver.com/images/user/images/help/bu_rarr_green.gif)\9;
+    -webkit-background-size: 3px 5px;
+    background-size: 3px 5px;
+}

@@ -1,0 +1,36 @@
+.mypetmain {
+	border: 1px solid gray;
+	float: left;
+    width: 70%;
+    margin-top: 110px;
+    padding-bottom: 50px;
+}
+.asd {
+	display: inline-block;
+	border: 1px solid gray;
+	margin: 10px;
+	width: 180px;
+}
+
+#imgbox1 {
+	position: relative;
+	display: inline-block;
+	background: url(cat.jpg) center center no-repeat;
+	border-radius: 50%;
+}
+
+#comment {
+	/* 한 줄 자르기 */
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; /* 여러 줄 자르기 추가 스타일 */
+	white-space: normal;
+	line-height: 1.2;
+	height: 6em;
+	text-align: left;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}

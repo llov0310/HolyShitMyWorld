@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 425px) { 
+	
+	
+	section{ 
+	background-color: lightgreen; 
+	} 
+}
+
+
+
+section{
+	width:100%;
+	hight:60%;
+	text-align: center;
+	margin : 15% 0 0 0;
+}
+
+footer{
+	width:100%;
+	hight:20%;
+	text-align: center;
+	float:left;
+}
+
+.img1{
+	width:100%;
+	hight:20%;
+}
+
+.total{
+	float:left;
+	width:100%;
+	height:100%;
+	margin-bottom : 10%;
+}
+
+.serv1{
+	float:left;
+	width: 100%;
+	margin-bottom: 10%;
+	
+}
+
+.serv2{
+	margin:0 0 5% 3%;
+	float:left;
+	width: 100%;
+	
+}
+
+.serv3{
+	margin-left:15%;
+	float:left;
+	width: 100%;
+	hight: 20%;
+}
+
+

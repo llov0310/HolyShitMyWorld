@@ -1,0 +1,31 @@
+.delmain{
+	padding-left: 14%;
+	padding-top:4%;
+	float: left;
+    width: 70%;
+ 
+}
+.scro_br {
+	font-size:14px;
+    border-right: #cbbfab 1px solid;
+    padding-right: 7px;
+    border-top: #cbbfab 1px solid;
+    padding-left: 8px;
+    scrollbar-face-color: #eeeeee;
+    padding-bottom: 12px;
+    scrollbar-highlight-color: #f0ebdf;
+    overflow: auto;
+    border-left: #cbbfab 1px solid;
+    width: 100%;
+    scrollbar-shadow-color: #b4b4b4;
+    color: #575551;
+    scrollbar-3dlight-color: #b4b4b4;
+    line-height: 17px;
+    scrollbar-arrow-color: #666666;
+    border-bottom: #cbbfab 1px solid;
+    scrollbar-darkshadow-color: #f0ebdf;
+    scrollbar-base-color: #eeeeee;
+    text-align: justify;
+    text-decoration: none;
+    letter-spacing: -0.1em;
+}

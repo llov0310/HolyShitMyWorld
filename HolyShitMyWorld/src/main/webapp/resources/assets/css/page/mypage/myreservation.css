@@ -1,0 +1,40 @@
+.mymain{
+		border: 1px solid gray;
+	float: left;
+    width: 70%;
+    margin-top: 110px;
+    padding-bottom: 50px;
+}
+
+table.type11 {
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+table.type11 th {
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+    background: #ce4869 ;
+}
+table.type11 td {
+    width: 200px;
+    padding: 5px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #eee;
+}
+
+.tab {margin-top: 50px; background:#fff; overflow:hidden; padding: unset; border-bottom:2px solid; #fff;}
+.tab li {border: 1px solid #E4E4E4; float:left; width:13%; border-left:1px solid #ddd; text-align:center; box-sizing:border-box; }
+.tab li { display:inline-block; padding:10px; cursor:pointer; }
+.tab li.on { background-color:#eee; color:#f00; }
+.tab_con div { display:none; background:#fff; line-height:100px; text-align:center; }
+
+.scroll{ 
+ height: 530px;
+overflow: auto;}

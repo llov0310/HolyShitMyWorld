@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<body th:fragment="body" id="page-top">
+
+	<th:block th:include="include/nav" />
+
+	<div>
+		<!-- 페이지 별 내용 들어갈 부분 -->
+		<th:block layout:fragment="contents">
+			
+			
+		</th:block>
+	</div>
+
+
+
+	<!-- 공통으로 사용할 js들 -->
+	<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"> -->
+	<!-- 	</script> -->
+
+
+	<!-- 특정 페이지 전용 js들 -->
+	<th:block layout:fragment="page_js" />
+</body>
+</html>

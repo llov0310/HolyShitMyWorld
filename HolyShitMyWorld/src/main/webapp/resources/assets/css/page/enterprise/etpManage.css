@@ -1,0 +1,611 @@
+@charset "UTF-8";
+
+
+/* home css */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.total h2{
+	border-bottom: 1px solid black;
+	width: 70%;
+}
+.total{
+	width:  100%;
+	margin : 5% 0 0 15%;
+}
+form{
+	width: 90%;
+	
+}
+
+form header {
+ 
+}
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  
+}
+form > div > fieldset > div > div {
+  
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: left;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: %; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}
+
+
+.st_table{border-collapse:collapse; width:100%}
+.st_table thead{float:left; width:90%;}
+
+.st_table thead th{width:180px;}
+
+th:nth-child(1){
+	padding-left : 68px; 
+}
+th:nth-child(2){
+	padding-left : 40px; 
+}
+th:nth-child(3){
+	padding-left : 33px; 
+}
+th:nth-child(4){
+	padding-left : 5px; 
+}
+th:nth-child(5){
+	padding-left : 37px; 
+}
+th:nth-child(6){
+	padding-left : 65px; 
+}
+th:nth-child(7){
+	padding-left : 40px; 
+}
+th:nth-child(8){
+	padding-left : 32px; 
+}
+th:nth-child(9){
+	padding-left : 43px; 
+}
+
+
+.st_table tbody{overflow-y:auto; overflow-x:hidden; float:left; width:90%; height:450px}
+/* .st_table tbody tr{display:table; width:890px;} */
+.st_table td{width:1000px; vertical-align: middle; text-align: center;}
+
+
+
+/*SIDEBAR CSS*/
+.sidebar {
+    position: absolute;
+    top : 87px;
+/* Change :absolute; to :fixed; to keep the sidebar in place when scolling. */
+    background: #c1c1c1;
+/* Sidebar Background */
+    width: 200px;
+/* Width of side bar. WARNING: If you change this, change .listItemA:width */
+    height: 90.5%;
+    padding-top: 10px;
+/* Padding above the sidebar image. */
+    font-family: helvetica;
+/* Font for the sidebar (Remove to keep the same font as the rest of the document) */
+}
+
+.sidebar a {
+    text-decoration: none;
+/* Removes the underline from links. */
+    color: #e9e7e7;
+/* Text color of the menu items */
+}
+
+.sidebar img {
+    margin-right: auto;
+    margin-left: auto;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    line-height: 40px;
+    overflow: hidden;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    background: #FF712C;
+/* Background colour of the menu items. */
+    color: #695D46;
+/* Text colour of the side bar titles. (Not the links). */
+}
+
+.listItemA {
+    height: 40px;
+    width: 240px;
+/* Alter this to be the .sidebar:width PLUS 40 */
+    transition: .3s;
+/* Speed of the hover animation */
+    position: relative;
+    left: -40px;
+}
+
+.listItemA:hover {
+    left: 0;
+}
+
+.listItemT {
+    text-align: center;
+}
+
+
+/*  img CSS */
+
+#gallery {
+  padding-top: 40px;
+  @media screen and (min-width: 991px) {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+  img {
+    width: 100%;
+  }
+}
+.img-overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  i {
+    color: #fff;
+    font-size: 3em;
+  }
+}
+
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  // Removes blue highlight
+  -webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none; 
+  user-select: none; 
+  img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+    @media screen and (min-width:768px) {
+        width: 60%;
+    }
+    @media screen and (min-width:1200px) {
+        width: 50%;
+    }
+  }
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width:768px) {
+    font-size: 3em;
+  }
+}
+
+
+.bottom_table{
+	position : relative; 
+	right : 2%;
+	width:95%; 
+	height:500px;
+}
+
+
+/* product Tab */
+
+#price_table{
+	width:90%;
+}
+
+.ttab th {
+	width : 20%;
+}
+
+
+/* order list */
+
+.top-nav{
+	margin: 0 0 3% 0;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 4%;
+}
+
+/* ===== Horizontal Rule ===== */
+.rule {
+  margin: 10px 0;
+  border: none;
+  height: 1.5px;
+  background-image: linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
+}
+
+/* ===== Select Box ===== */
+.sel {
+  font-size: 8px;
+  display: inline-block;
+  margin: 0 0 0 5%;
+  width: 200px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+.sel__placeholder {
+  display: block;
+  font-family: 'Quicksand';
+  font-size: 2.3em;
+  color: #838e95;
+  padding: 0.2em 0.5em;
+  text-align: left;
+  pointer-events: none;
+  user-select: none;
+  visibility: visible;
+}
+
+.sel.active .sel__placeholder {
+  visibility: hidden;
+}
+
+.sel__placeholder::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.2em 0.5em;
+  content: attr(data-placeholder);
+  visibility: hidden;
+}
+
+.sel.active .sel__placeholder::before {
+  visibility: visible;
+}
+
+.sel__box {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: -4px;
+  display: none;
+  list-style-type: none;
+  text-align: left;
+  font-size: 1em;
+  background-color: #FFF;
+  width: calc(100% + 8px);
+  box-sizing: border-box;
+}
+
+.sel.active .sel__box {
+  display: block;
+  animation: fadeInUp 500ms;
+}
+
+.sel__box__options {
+  display: list-item;
+  font-family: 'Quicksand';
+  font-size: 1.5em;
+  color: #838e95;
+  padding: 0.5em 1em;
+  user-select: none;
+}
+
+.sel__box__options::after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  font-size: 0.5em;
+  margin-left: 5px;
+  display: none;
+}
+
+
+
+.sel__box__options:hover {
+  background-color: #ebedef;
+}
+
+/* ----- Select Box Black Panther ----- */
+.sel {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+}
+
+.sel--black-panther {
+  z-index: 3;
+}
+
+/* ----- Select Box Superman ----- */
+.sel--superman {
+/*   display: none; */
+  z-index: 2;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+.sel-to{
+	top : 16px;
+}
+.sel-to2{
+	border : hidden;
+}
+.searchBtn{
+	
+	width: 100%;
+	font-size : 20px;
+}
+
+/* 검색창 input 옵션 */
+
+input.opt {
+	background-color : white;
+	border : hidden;
+	width : 100%;
+	font-size: 18px;
+	outline : none;
+}
+
+input.opt1 {
+	background-color : white;
+	border : hidden;
+	width : 100%;
+	font-size: 18px;
+	outline : none;
+}
+/* page nation */
+.pagenation {
+	float: left;
+}
+
+/* date */
+
+.clender {
+	font-size: 17px;
+	border :hidden;
+	color: #6c757d;
+	padding :0 0 3px 0;
+}
+
+/* 팝업창 디자인 */
+
+
+
+#bP {
+	 opacity: 0;
+	 display: none;
+	 position: fixed;
+	 width: 600px;
+	 height: 75%;
+	 border: 5px solid #fff;
+	 padding: 20px;
+	 background-color: #fff;
+	 
+	}  
+
+
+/* on off button */
+.on-off{
+	float : left;
+	width: 50%;
+	font-size: 18px;
+}
+
+
+
+*, *:before, *:after {
+   -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+.four{
+	width: 50%;
+	float:right;
+	bottom : 5px;
+}
+/* BUTTON 4 */
+.four .button-wrap {
+  width: 40px;
+  cursor: pointer;
+  float: right;
+}
+.four .button-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #bb2222;
+  border-radius: 40px;
+  padding: 3px;
+  color:#fff;
+  transition:all 0.2s ease;
+  
+}
+.four .button-switch {
+  position:relative;
+  left:0px;
+  width: 15px;
+  height: 15px;
+  border:solid 8px;
+  background-color:#fff;
+  border-radius: 36px;
+  transition:all 0.3s ease;
+  
+}
+.four .button-active .button-switch { left:18px; }
+.four .button-in, 
+.four .button-out {
+  position:absolute; 
+  transition:all 0.2s ease;
+  padding-top:15px;
+  font-size:0.8em;
+  text-transform:uppercase;
+  font-weight:bold;
+  
+}
+.four .button-in { margin-left:76px; }
+.four .button-out { margin-left:15px; }
+.four .button-active .button-out {  }
+.four .button-active .button-in {  }
+.four .button-active .button-bg { background-color:#22bb22; }
+
+
+/* 상세보기 css */
+
+

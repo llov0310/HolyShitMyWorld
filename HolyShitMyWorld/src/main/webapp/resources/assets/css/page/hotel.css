@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+
+.full-div{
+	width: 100%;
+	height : 100%;
+
+
+}
+
+
+/* 전체페이지 디자인  */
+
+
+#carouselExampleIndicators{
+	
+	width: 100%;
+	height: 80%;
+}
+
+.total-div{
+		width:100%;
+		height:20%;
+		
+	}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 600px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index : 1;
+  
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #9CC9E3;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
+
+
+.left-div{
+		
+		margin-left : 25%;
+		width : 100%;
+
+}
+
+.to1{
+	flex: flex-wrap;
+}
+/*검색과 list가 따로움직이지 않도록 묶어주는 div */
+.div_serach_total{
+	float:left;
+	padding-left : 2%;
+}
+
+/* 리스트를 감싸는 큰 div */
+/* #sear2{ */
+/* 	float : left; */
+	
+/* } */
+
+
+
+#searchlist{
+   position: relative;
+   background-color: #fff;
+   z-index: 3; 
+   box-shadow: 0 1px 4px 0 rgba(41,51,57,.5);
+	display: none;
+	bottom: 460px;
+	left: 470px;
+
+}
+
+#arealist{
+   width : 450px;
+   
+    padding: 12px;
+    display: flex;
+  flex-wrap: wrap;
+    list-style:none;
+    margin-left : 1%;
+     
+}
+
+#arealist li{
+   padding: 20px;
+}
+#arealist span{
+   padding: 15px;
+   
+}
+
+#titlearea{
+ border-bottom: 2px solid gray;
+ margin: 3px;
+ padding: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 426px) { 
+	
+	body {
+			font-size : 18px; } 
+
+	.total-div{
+		width:100%;
+		height:100%;
+	}
+	
+	.left-div{
+		border-top : 1px solid black;
+		border-bottom : 1px solid black;
+		margin-top : 22%;
+		width : 100%;
+		height : 200px;
+		float : left;
+		
+	}
+	
+	.right-div{
+		
+		width : 100%;
+		height : 600px;
+		float : left;
+		
+	
+	}
+	
+	.address-mm{
+		text-align: center;
+		float : left;
+		width : 40%;
+		margin-left : 30%;
+		margin-top : 8%;
+	}
+	
+	
+	
+
+	/*상단 */
+	.to1{
+	float : left;
+	text-align: center;
+	margin-left : 10%;
+	}
+	
+	/* 하단 div 내부 바  */
+	.top-bar{
+	float : left;
+	
+	width : 99%;
+	height : 9%;
+	font-size: 12px;
+	
+
+	}
+	
+	.list-bar{
+	float : left;
+	border : 1px solid black;
+	width : 100%;
+	overflow: scroll;
+	height : 89%;
+
+	}
+	
+	.move1{
+		width:50%;
+		float : left;
+		margin-top : 1%;
+	}
+	
+	.move2{
+		width:48%;
+		float : right;
+		margin-top : 1%;
+	}
+	
+	.test{
+		width: 100%;
+		
+	}
+		
+	.la{
+		float : left;
+		font-size:12px;
+		padding-left : 25%;
+	}
+	
+	.in{
+		float : left;
+		width:80%;
+	
+		font-size:10px;
+	
+	}
+	
+	
+	.list{
+		float : left;
+		width : 100%;
+		border-bottom : 1px solid black;
+	}
+	
+	.test{
+		float:left;
+		width:100%;
+	}
+	
+	.map{
+	margin-top : 4%;
+	background-color : white;
+	border-color : white;
+	}
+	
+	
+	
+	/* 업체 리스트 css */
+	
+	.company_list_img{
+	float:left;
+	padding : 5% 0 0 5%;
+	}
+	
+	.company_list{
+	width:50%;
+	float:left;
+	padding : 5% 0 0 0;
+	}
+	
+	.intro{
+		float : left;
+		margin-left : 5%;
+	}
+	
+	.money{
+		float : right;
+		margin-right : 5%;
+		font-size: 13px;
+	}
+	
+}

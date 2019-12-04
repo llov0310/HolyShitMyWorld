@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+
+<!-- 	<bean id="dataSource" -->
+<!-- 		class="org.apache.commons.dbcp2.BasicDataSource" -->
+<!-- 		destroy-method="close"> -->
+<!-- 		<property name="driverClassName" -->
+<!-- 			value="oracle.jdbc.driver.OracleDriver" /> -->
+<!-- 		<property name="url" -->
+<!-- 			value="jdbc:oracle:thin:@39.127.7.80:1521:orcl"></property> -->
+<!-- 		<property name="username" value="together2" /> -->
+<!-- 		<property name="password" value="together2" /> -->
+<!-- 	</bean> -->
+	
+	<!-- 아마존 RDS DB 연결을 위한 소스코드 -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp2.BasicDataSource" 
+		destroy-method="close">
+		<property name="driverClassName"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@oracledb.c8f5dtadhdns.ap-northeast-2.rds.amazonaws.com:1521:oracledb"></property>
+		<property name="username" value="together" />
+		<property name="password" value="together300" />
+	</bean>
+	
+	
+	
+	<bean id="sqlSessionFactory"
+		class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<mybatis-spring:scan base-package="com.together.mapper" />
+	<context:component-scan base-package="com.together.service"/>
+</beans>

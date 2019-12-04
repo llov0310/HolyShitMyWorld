@@ -1,0 +1,55 @@
+
+/* 전체페이지 디자인  */
+
+body {
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 600px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+
+/* 메모리얼 게시판 버튼 로그인시만 보이게끔  */
+#write {
+	
+}
+
+
+
+
+
+
+
+/* 버튼  */
+
+#btn{
+  	 width: 50%; 
+  	 
+}
+
+=======
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #9CC9E3;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+>>>>>>> branch 'master' of https://github.com/llov0310/TogetherProject.git
+
+
+
+
+

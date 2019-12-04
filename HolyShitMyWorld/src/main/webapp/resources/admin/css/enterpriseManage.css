@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 검색 부분 가운데 정렬을 위한 css 코드 */
+.search *{ /* inline으로 변경해야 가로로 정렬 할 수 있음*/
+	display : inline;
+}
+
+.search{
+	width : 25%;
+	height : 25%;
+	margin : 0 auto;
+}
+
+#bP {
+	 opacity: 0;
+	 display: none;
+	 position: fixed;
+	 height: 65%;
+	 border: 5px solid #fff;
+	 padding: 20px;
+	 background-color: #fff;
+	 z-index: 5;
+}  
+
+

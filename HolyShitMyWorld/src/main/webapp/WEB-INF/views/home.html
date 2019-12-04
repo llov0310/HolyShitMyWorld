@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="include/layout">
+
+<th:block layout:fragment="page_head">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Jua|Single+Day&display=swap&subset=korean" rel="stylesheet">
+	<style>
+#fow1 {
+	position: absolute;
+	bottom: -23px;
+	max-width: 360px;
+	left: 690px;
+	width: 55%;
+}
+
+#etpup {
+	opacity: 1.4;
+	filter: alpha(opacity = 50); /* For IE8 and earlier */
+}
+.mb-3{
+font-family: 'Jua', sans-serif; font-size: 28px;
+}
+</style>
+<!-- 스크롤시 상단바 색깔 변경되는 js -->
+<script src="assets/js/home.js"></script>
+
+	<title>홈 페이지</title>
+</th:block>
+
+
+<th:block layout:fragment="contents">
+	<!-- HERO
+    ================================================== -->
+	<section class="section section-top section-full">
+
+		<!-- Cover -->
+		<div class="bg-cover"
+			style="background-image: url(assets/img/Logo/HolyLogo.jpg); width: 100%; height: 100%;"></div>
+
+		<!-- Overlay -->
+		<div class="bg-overlay"></div>
+		<!-- Content -->
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-10 col-lg-7 ">
+					<div class="banner-content">
+						<!-- Preheading -->
+<!-- 						<p class="text-white text-uppercase text-center text-xs"> -->
+<!-- 							<span>Dog Love</span> -->
+<!-- 						</p> -->
+
+						<!-- Heading -->
+<!-- 						<h1 class="text-white text-center mb-4 display-4 font-weight-bold"> -->
+<!-- 							반려견 종합 서비스 <br> Together에 오신것을 <br> 환영합니다. -->
+<!-- 						</h1> -->
+
+
+
+						<!-- Subheading -->
+<!-- 						<p class="lead text-white text-center mb-5" style="font-family: 'Noto Sans KR', sans-serif; font-size: 18px;"> -->
+<!-- 							반려견에 대한 통합서비스가 주인 투개더에서는 사용자의 편의성과 함께 <br> <br>새로운 서비스를 -->
+<!-- 							제공하고 있습니다 분양/짝찾기/병원/장례 등 <br> <br>정보를 확인할수 있으며 커뮤니티를 통해 -->
+<!-- 							<br> <br>쉽게 알고자하는 정보를 획득할수 있습니다. <br> <br>반려견과 -->
+<!-- 							처음부터 끝까지 책임지는 서비스 플랫폼 입니다. -->
+<!-- 						</p> -->
+
+						<!-- 							<a id="etpApplyBtn" href="/etpApply"><img id="etpup"alt="" src="assets/img/배경13.png"></a>  -->
+<!-- 						<input type="button" id="etpApplyBtn" class="btn btn-primary" -->
+<!-- 							value="업체 신청" /> -->
+
+
+						<!-- Button -->
+						<!-- 						<div class="text-center mb-0"> -->
+						<!-- 							<a -->
+						<!-- 								href="https://play.google.com/store/apps?utm_source=apac_med&utm_medium=hasem&utm_content=Jan0219&utm_campaign=Evergreen&pcampaignid=MKT-DR-apac-kr-1003227-med-hasem-ap-Evergreen-Jan0219-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700009359644034_creativeid_96242360585_device_c&gclid=EAIaIQobChMIos6S79qA4QIVhKmWCh3c8wTKEAAYASAAEgJzU_D_BwE&gclsrc=aw.ds" -->
+						<!-- 								target="_blank" class="btn btn-dark"> Google play -->
+						<!-- 								Download </a> <a -->
+						<!-- 								href="https://itunes.apple.com/kr/app/apple-store/id375380948?mt=8" -->
+						<!-- 								target="_blank" class="btn btn-dark" style="width: 247px;"> -->
+						<!-- 								ios Download </a> -->
+						<!-- 						</div> -->
+					</div>
+				</div>
+			</div>
+			<!-- / .row -->
+		</div>
+		<!-- / .container -->
+	</section>
+
+
+	<!-- SECTIONS
+    ================================================== -->
+	<!-- PAGES
+    ================================================== -->
+
+	<!-- FEATURES
+    ================================================== -->
+	<section class="section" id="feature">
+		<div class="container">
+			<div class="row justify-content-center mb-4">
+				<div class="col-md-8 col-lg-6 text-center">
+
+					<!-- Heading -->
+					<h2 class="lg-title mb-2">반려견을 위한 서비스</h2>
+
+					<!-- Subheading -->
+					<p class="mb-5 ">1000만 반려동물시대에 맞춘 최적화 플랫폼</p>
+
+				</div>
+			</div>
+			<!-- / .row -->
+
+			<div class="row justy-content-center">
+			
+			<div class="col-lg-3 col-md-6">
+					<div class="text-center feature-block" id="memorialGallery">
+						<div class="img pet goodbye">
+							<img src="assets/img/dog2.jpg" style="	border-radius: 50%;">
+						</div>
+						<h4 class="mb-3" style="padding-top: 10px;">펫칭</h4>
+					</div>
+				</div>
+			
+				<div class="col-lg-3 col-md-6" id="Hotel">
+					<div class="text-center feature-block">
+						<div class="img petching">
+							<img src="assets/img/petHotel.png">
+						</div>
+						<h4 class="mb-3" style="padding-top: 10px;">애견호텔</h4>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6" id="Hospital">
+				<div class="text-center feature-block">
+						<div class="img pet hospital">
+							<img src="assets/img/petHospital.png">
+						</div>
+						<h4 class="mb-3" style="padding-top: 10px;">애견병원</h4>
+					</div>
+
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="text-center feature-block" id="goodbye1">
+						<div class="img pet community">
+							<img src="assets/img/goodByePet.png">
+						</div>
+						<h4 class="mb-3" style="padding-top: 10px;">굿바이펫(장례)</h4>
+					</div>
+				</div>
+
+				
+
+
+			</div>
+		</div>
+		<!-- / .container -->
+	</section>
+
+
+	<!-- ABOUT
+    ================================================== -->
+	<section class="section bg-light" id="about">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img src="assets/img/about/twopet.jpg" alt="" class="img-fluid">
+					</div>
+				</div>
+
+				<div class="col-lg-6 ">
+					<div class="about-content">
+						<h2 class="display-5">펫칭(PetChing)</h2>
+						<p>펫칭은 신개념 매칭 서비스 입니다. 반려견의 정보를 한눈에 알아보고 자신이 원하는 반려견을 찾아내어 매칭이
+							가능하도록 만들어줍니다 사용자는 편의성과 함께 시간을 단축 할수 있는 서비스 입니다.</p>
+
+
+						<ul class="list-unstyled skill-list ">
+							<li>반려견 짝 찾기 서비스</li>
+							<li>분양/입양 센터 서비스</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row mt-5 align-items-center ">
+				<div class="col-lg-6 col-md-6">
+					<div class="about-content-2 ">
+						<h2 class="display-5">펫 병원</h2>
+						<p>펫 병원은 사용자들의 예약을 간편하게 도와줄수 있습니다. 이 서비스는 실시간 예약 서비스로 좀더 견주분들께
+							즉각적으로 반응하여 큰일이 나지 않도록 해주는 서비스입니다.</p>
+
+						<ul class="list-unstyled skill-list ">
+							<li>실시간 예약 서비스</li>
+							<li>위치 기반 서치</li>
+							<li>편리한 UI</li>
+							<li>믿을수 있는 업체 정보</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6">
+					<div class="about-img">
+						<img src="assets/img/about/pethos.jpg" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+		<p>
+		<pre>
+        
+        </pre>
+
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img src="assets/img/about/dogcom.JPG" alt="" class="img-fluid">
+					</div>
+				</div>
+
+				<div class="col-lg-6 ">
+					<div class="about-content">
+						<h2 class="display-5">펫 커뮤니티</h2>
+						<p>펫 커뮤니티는 SNS 형태의 사진 기반 커뮤니티 서비스 입니다. 이러한 서비스를 통해 사용자들은 정보를
+							공유하고 일상을 공유하며 공감대를 느낄수잇는 서비스입니다 또한 SNS에 게시된 게시글의 정보를 빠르게
+							Together내에서 검색이 가능합니다. 그리고 모임기능을 통해 자신과 성향이 비슷한 사람들과 함께 그룹활동을 하여
+							좀더 반려견과 가까워질수 있습니다.</p>
+
+
+						<ul class="list-unstyled skill-list ">
+							<li>통합 서비스 연계</li>
+							<li>사진 커뮤니티 서비스</li>
+							<li>메세지 기능 구현</li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<pre>
+        
+        </pre>
+		<div class="container">
+			<div class="row mt-5 align-items-center ">
+				<div class="col-lg-6 col-md-6">
+					<div class="about-content-2 ">
+						<h2 class="display-5">펫 호텔</h2>
+						<p>펫 호텔은 반려견의 최상의 휴식장소를 제공합니다. 업체를 통해 비교할수 있는 정보를 제공하여 사용자의
+							편의성을 높이고 조건에 맞는 호텔을 검색할수 있는 서비스입니다. 펫 호텔은 실시간으로 예약이 가능하며 비어있다면
+							방위치를 자신이 선택할수 있습니다.</p>
+
+						<ul class="list-unstyled skill-list ">
+							<li>실시간 예약 서비스</li>
+							<li>위치 기반 서치</li>
+							<li>편리한 UI</li>
+							<li>믿을수 있는 업체 정보</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6">
+					<div class="about-img">
+						<img src="assets/img/about/pethotal.png" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+		<pre>
+        
+        </pre>
+
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-6">
+					<div class="about-img">
+						<img src="assets/img/about/petfuneal.jpg" alt="" class="img-fluid">
+					</div>
+				</div>
+
+				<div class="col-lg-6 ">
+					<div class="about-content">
+						<h2 class="display-5">굿바이펫</h2>
+						<p>굿바이펫은 반려견의 사후처리를 책임집니다. 믿고 내 가족처럼 내일처럼 맡아서 도와주고 견주의 슬픔을 함께
+							나눕니다. 또한 온라인 추모소를 동해 자신의 반려견에 하고싶은말을 적어 보낼수 있고 원한다면 다른 견주들의 위로를
+							받을수 있습니다.</p>
+
+
+						<ul class="list-unstyled skill-list ">
+							<li>장례 업체 정보 제공</li>
+							<li>너와 함께 한 추억 다이어리 서비스</li>
+
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<!-- SERVICES
+    ================================================== -->
+
+
+	<!-- ABOUT
+    ================================================== -->
+<!-- 	<section class="section bg-light" id="portfolio"> -->
+<!-- 		<div class="container"> -->
+<!-- 			<div class="row justify-content-center mb-4"> -->
+<!-- 				<div class="col-md-8 col-lg-7 text-center"> -->
+
+<!-- 					Heading -->
+<!-- 					<h2 class="lg-title mb-2">앱 소개 화면</h2> -->
+
+<!-- 					Subheading -->
+<!-- 					<p class="mb-5">Together 앱 실제 화면 미리보기</p> -->
+
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 			<!-- / .row --> -->
+
+<!-- 			<div class="row justify-content-center"> -->
+<!-- 				<div class="col-lg-4 col-md-6 col-sm-6 mb-5"> -->
+<!-- 					<div class="portfolio-block"> -->
+<!-- 						<img src="assets/img/portfolio/43.png" alt="portfolio"> -->
+
+<!-- 						<div class="portfolio-content"> -->
+<!-- 							<h4>Probiz-portfolio web template</h4> -->
+<!-- 							<span class="work-cat">Web Design</span> -->
+<!-- 						</div> -->
+<!-- 						<div class="overlay-content"> -->
+<!-- 							<a href="single-portfolio.html"><i class="fa fa-link"></i></a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-lg-4 col-md-6 col-sm-6 mb-5"> -->
+<!-- 					<div class="portfolio-block"> -->
+<!-- 						<img src="assets/img/portfolio/44.png" alt="portfolio"> -->
+
+<!-- 						<div class="portfolio-content"> -->
+<!-- 							<h4>Probiz-portfolio web template</h4> -->
+<!-- 							<span class="work-cat">Web Design</span> -->
+<!-- 						</div> -->
+<!-- 						<div class="overlay-content"> -->
+<!-- 							<a href="single-portfolio.html"><i class="fa fa-link"></i></a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-lg-4 col-md-6 col-sm-6 mb-5"> -->
+<!-- 					<div class="portfolio-block"> -->
+<!-- 						<img src="assets/img/portfolio/43.png" alt="portfolio"> -->
+
+<!-- 						<div class="portfolio-content"> -->
+<!-- 							<h4>Probiz-portfolio web template</h4> -->
+<!-- 							<span class="work-cat">Web Design</span> -->
+<!-- 						</div> -->
+<!-- 						<div class="overlay-content"> -->
+<!-- 							<a href="single-portfolio.html"><i class="fa fa-link"></i></a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-lg-4 col-md-6 col-sm-6"> -->
+<!-- 					<div class="portfolio-block"> -->
+<!-- 						<img src="assets/img/portfolio/45.png" alt="portfolio"> -->
+
+<!-- 						<div class="portfolio-content"> -->
+<!-- 							<h4>Probiz-portfolio web template</h4> -->
+<!-- 							<span class="work-cat">Web Design</span> -->
+<!-- 						</div> -->
+<!-- 						<div class="overlay-content"> -->
+<!-- 							<a href="single-portfolio.html"><i class="fa fa-link"></i></a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 				<div class="col-lg-4 col-md-6 col-sm-6"> -->
+<!-- 					<div class="portfolio-block"> -->
+<!-- 						<img src="assets/img/portfolio/46.png" alt="portfolio"> -->
+
+<!-- 						<div class="portfolio-content"> -->
+<!-- 							<h4>Probiz-portfolio web template</h4> -->
+<!-- 							<span class="work-cat">Web Design</span> -->
+<!-- 						</div> -->
+<!-- 						<div class="overlay-content"> -->
+<!-- 							<a href="single-portfolio.html"><i class="fa fa-link"></i></a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 	</section> -->
+
+</th:block>
+
+</html>
